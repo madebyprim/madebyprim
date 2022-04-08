@@ -1,9 +1,14 @@
 body {
+	background-color: #8D99AE;
 	margin: 0;
+	font-family: decoy, verdana;
 }
 .navbar {
-	background-color: mintcream;
-	border-bottom: black 1px solid;
+	user-select: none;
+	background-color: #2B2D42;
+	font-family: decoy,serif;
+	font-weight: 700;
+	font-style: normal;
 }
 .navbar ul {
 	display: flex;
@@ -18,50 +23,68 @@ body {
 .navbar a,
 .navbar button {
 	border: none;
-	border-right: black solid 1px;
+	border-right: #EDF2F4 solid 1px;
 	padding: 10px;
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: #EDF2F4;
 	min-height: 80px;
 	min-width: 80px;
 }
 .navbar a:hover,
 .navbar a:focus {
-	background-color: grey;
+	color: #EF233C;
 	cursor: pointer;
 }
-.navbardropdowncontainer {
+.dropdowncontainer {
 	position: relative;
 	display: block;
 }
-.navbardropdowncontent {
+.dropdowncontent {
+	font-size: 32pt;
 	display: none;
 	position: absolute;
 	z-index: 1;
 	left: 0;
 	min-width: 250px;
 }
-.navbardropdowncontent a {
-	border-bottom: black 1px solid;
-	background-color: white;
+.dropdowncontent a {
+	border-bottom: #EDF2F4 1px solid;
+	background-color: #2B2D42;
 }
-#firstnavdropdownlink {
-	border-top: solid black 1px;
+#firstdropdownlink {
+	border-top: solid #EDF2F4 1px;
 }
-.navbardropdownshow {
+.dropdownshow {
 	display: block;
 }
 .navbar #title {
+	font-size: 12pt;
 	border: none;
-	border-left: black solid 1px;
+	border-left: #EDF2F4 solid 1px;
 	margin-left: auto;
 	margin-right: 0;
 }
 .maincontent {
+	background-color: #8D99AE;
 	margin: 100px 100px;
+	text-align: center;
+	color: #EDF2F4;
+	user-select: none;
 }
 .maincontent div {
-	border: black 1px solid;
 	padding: 10px;
+}
+.maincontent h1 {
+	font-family: decoy,serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 64pt;
+}
+
+.maincontent {
+	font-size: 32pt;
+	font-family: decoy,serif;
+	font-weight: 300;
+	font-style: normal;
 }
