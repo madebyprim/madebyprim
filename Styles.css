@@ -46,7 +46,7 @@ body {
 	border-bottom: black 1px solid;
 	background-color: white;
 }
-.navbardropdowncontent:first-child {
+#firstnavdropdownlink {
 	border-top: solid black 1px;
 }
 .navbardropdownshow {
