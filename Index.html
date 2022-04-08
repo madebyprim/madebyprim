@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>madebyprim</title>
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<script type="text/javascript">
+		function navbardropdown() {
+			document.getElementById("navbardropdowncontent").classList.toggle("navbardropdownshow");
+		}
+		window.onclick = function(event) {
+			if (!event.target.matches('navbardropdown')) {
+				var dropdowns = document.getElementsByClassName("navbardropdownbutton");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('navbardropdownshow')) {
+						openDropdown.classList.remove('navbardropdownshow');
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<div class="navbardropdowncontainer">
+				<a onclick="navbardropdown()" class="navbardropdownbutton"><li><h1>≡</h1></li></a>
+				<div id="navbardropdowncontent" class="navbardropdowncontent">
+					<a href="#">Martin Site Draft</a>
+				</div>
+			</div>
+			<a href="" id="title"><li><h1>madebyprim</h1></li></a>
+		</ul>
+	</div>
+	<div class="maincontent">
+		<div>
+			<h1>Nothing here yet...</h1>
+			<p>Check back soon.</p>
+		</div>
+	</div>
+</body>
+</html>
